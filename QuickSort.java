@@ -10,7 +10,7 @@ public class QuickSort implements SortingAlgorithm{
 		int j = bot;
 		int pivot = (top + bot) / 2; 
 		
-		while (i < j) {
+		while (i <= j) {
 			while (a[i] < a[pivot])
 				i++;
 			while (a[j] > a[pivot])
@@ -20,7 +20,7 @@ public class QuickSort implements SortingAlgorithm{
 					pivot = j;
 				else if (j == pivot)
 					pivot = i;
-				swap(a, i++, j);
+				swap(a, i++, j--);
 			}
 		}
 		return i;
