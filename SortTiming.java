@@ -192,7 +192,7 @@ public class SortTiming {
 		
 		SortTiming timing = new SortTiming();
 		int [] sizes = {50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000};
-		
+		//int [] sizes = {200000};
 		for (int size : sizes) {
 			timing.changeArraySize(size);
 			// timing.printStatus();
